@@ -1,0 +1,111 @@
+.Footer {
+    margin: 0 auto;
+    width: 1440px;
+}
+
+.Footer_flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Footer_logo {
+    padding-top: 35px;
+}
+
+.Footer_logoName {
+    display: flex;
+    width: 235px;
+    justify-content: space-between;
+}
+
+.Footer_logo_imgs {
+    display: flex;
+    width: 118px;
+}
+
+.Footer_logo_img {
+    background-image: url(./img/footer_logo.png);
+    width: 35px;
+    height: 36px;
+}
+
+.Footer_logo_kcc {
+    padding-left: 7px;
+    color: #929292;
+    font-size: 39px;
+    font-weight: 700;
+    line-height: 27px;
+
+}
+
+.Footer_logo_name>div:nth-child(1) {
+    color: #929292;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.Footer_logo_name>div:nth-child(2) {
+    color: #929292;
+    font-size: 8px;
+    font-weight: 400;
+    padding-left: 2px;
+}
+.Footer_logo_adr{
+    padding: 10px 0 50px 0;
+}
+.Footer_logo_adr>p {
+    color: #929292;
+    font-size: 12px;
+    font-weight: 700;
+}
+.Footer_info{
+padding-top: 35px;
+}
+.Footer_info h4{
+    color: #929292;
+font-size: 12px;
+font-weight: 700;
+}
+.Footer_info h5{
+    color: #929292;
+font-size: 12px;
+font-weight: 400;
+}
+.Footer_img_flex{
+    display: flex;
+    justify-content:space-between ;
+    padding-top: 10px;
+}
+.Footer_img_inst{
+    background-image: url(./img/instagram_icon_194148.png);
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    display: block;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: multiply;
+}
+.Footer_img_face{
+    background-image: url(./img/facebook_icon_194147.png);
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    display: block;
+
+}
+.Footer_img_kakao{
+    background-image: url(./img/kakaotalk_icon_194149.png);
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    display: block;
+
+}
+.Footer_img_twi{
+    background-image: url(./img/twitter_icon_194154.png);
+    width: 20px;
+    height: 20px;
+    background-size: cover;
+    display: block;
+
+}

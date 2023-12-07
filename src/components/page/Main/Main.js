@@ -1,10 +1,12 @@
 import './Main.css';
 import { Link } from 'react-router-dom'
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
+import Slide from './Slide';
+import { MapMarker,Map } from 'react-kakao-maps-sdk'
 
 const Main = () => {
   const [currentDate, setCurrentDate] = useState(new Date());
-
+  const [currentIndex, setCurrentIndex] = useState(0);
   const prevCalendar = () => {
     const prevMonth = new Date(currentDate);
     prevMonth.setMonth(currentDate.getMonth() - 1);
@@ -17,33 +19,159 @@ const Main = () => {
     setCurrentDate(nextMonth);
   };
 
+  const calendarDays = () => {
+    const today = new Date();
+    const firstDayOfMonth = new Date(currentDate.getFullYear(), currentDate.getMonth(), 1);
+    const lastDayOfMonth = new Date(currentDate.getFullYear(), currentDate.getMonth() + 1, 0);
+    const daysInMonth = lastDayOfMonth.getDate();
+
+    const rows = [];
+    let dayCount = 1;
+
+    for (let i = 0; i < 6; i++) {
+      const cells = [];
+      for (let j = 0; j < 7; j++) {
+        if (i === 0 && j < firstDayOfMonth.getDay()) {
+          // 빈 셀로 채우기
+          cells.push(<td key={j}></td>);
+        } else if (dayCount > daysInMonth) {
+          // 날짜가 월의 마지막 날을 넘어갔을 때
+          cells.push(<td key={j}></td>);
+        } else {
+          // 유효한 날짜일 때
+          const isToday =
+            dayCount === today.getDate() && currentDate.getMonth() === today.getMonth() && currentDate.getFullYear() === today.getFullYear();
+          const isPastDay = dayCount < today.getDate() && currentDate.getMonth() === today.getMonth() && currentDate.getFullYear() === today.getFullYear();
+          const cellClass = isToday ? 'today' : isPastDay ? 'past-day' : '';
+
+          cells.push(
+            <td key={j} className={cellClass}>
+              {isToday ? <span className="circle"></span> : null}
+              {dayCount}
+            </td>
+          );
+          dayCount++;
+        }
+      }
+      rows.push(<tr key={i}>{cells}</tr>);
+    }
+
+    return rows;
+  };
+  const eventSlides = [
+    {
+      title: '2023 하나은행 인비테이셔널 KPGA대회',
+      period: '2023년 06월 15일~2023년 06월 19일',
+      location: '광주 컨트리클럽 빅토리(OUT), 챌린지(IN) 코스',
+      img: require('./img/hanagolf.png')
+    },
+    {
+      title:
+        '겨울 가래떡 이벤트',
+      period: '2023년 11월 27일~2023년 12월 17일',
+      location: '광주 컨트리클럽 그늘집',
+      img: require('./img/dduk.png')
+    },
+    {
+      title: '2023 올빼미 골프대회',
+      period: '2023년 08월 15일~2023년 09월 31일',
+      location: '광주 컨트리클럽 오솔길(OUT), 단풍길(IN) 코스',
+      img: require('./img/qdeal.png')
+    },
+  ];
+  console.log(eventSlides)
+  const eventSlidesToDisplay = eventSlides.slice(currentIndex, currentIndex + 1);
+  useEffect(() => {
+    const interval = setInterval(() => {
+
+      if (!isPaused) {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % eventSlides.length);
+      }
+    }, 5000);
+    return () => {
+
+      clearInterval(interval);
+    };
+  }, [currentIndex, eventSlides.length]);
+  const [isPaused, setIsPaused] = useState(false);
+  const toggleSlidePause = () => {
+    setIsPaused((prevIsPaused) => !prevIsPaused);
+  };
+
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      if (!isPaused) {
+        setCurrentIndex((prevIndex) => (prevIndex + 1) % eventSlides.length);
+      }
+    }, 5000);
+    const images = document.querySelectorAll('.event-image');
+    images.forEach((image, index) => {
+      if (index === currentIndex) {
+        image.classList.add('active');
+      } else {
+        image.classList.remove('active');
+      }
+    });
+    return () => {
+      clearInterval(interval);
+    };
+
+  }, [currentIndex, isPaused, eventSlides.length]);
+
+  const galleryPhoto = [
+    require('./img/photo1.png'),
+    require('./img/photo2.png'),
+    require('./img/photo3.png'),
+    require('./img/photo4.png'),
+    require('./img/photo5.png'),
+    require('./img/photo6.png'),
+    require('./img/photo7.png'),
+    require('./img/photo8.png'),
+    require('./img/photo9.png'),
+    require('./img/photo10.png'),
+    require('./img/photo11.png'),
+    require('./img/photo12.png'),
+    require('./img/photo13.png'),
+    require('./img/photo14.png'),
+    require('./img/photo15.png'),
+    require('./img/photo16.png'),
+    require('./img/photo17.png'),
+    require('./img/photo18.png')
+  ]
+  const [gallerys, setgallerys] = useState(0);
+  const galleryRef = useRef(null);
+  const firstGallery = () => {
+    const startGallerys = gallerys;
+    const endGallerys = startGallerys + 10;
+    const slicedPhotos = galleryPhoto.slice(startGallerys, endGallerys);
+    const galleryRows = [];
+    for (let i = 0; i < 5; i++) {
+      const rowPhotos = slicedPhotos.slice(i * 2, (i + 1) * 2);
+      const rowElements = rowPhotos.map((photo, index) => (
+        <li key={index} >
+          <img src={photo} alt={`photo-${index}`} />
+        </li>
+      ));
+      galleryRows.push(<ul key={i}>{rowElements}</ul>);
+    }
+
+    return galleryRows;
+  };
+  const PhotoPrev = () => {
+    // 이전 버튼 클릭 시 currentIndex 변경
+    setgallerys((prevIndex) => Math.max(prevIndex - 5, 0));
+  };
+
+  const PhotoNext = () => {
+    // 다음 버튼 클릭 시 currentIndex 변경
+    setgallerys((prevIndex) => Math.min(prevIndex + 10, galleryPhoto.length - 10));
+  };
 
 
   return (
     <div className="Main">
       <section className='Main_img'>
-        <article className='Main_line'>
-          <div className='Main_logo'>
-            <div className='Main_main_logo'></div>
-            <div className='Main_main_mutual'>
-              <h2>광주컨트리클럽</h2>
-              <h4>Gwangju Cuntry Club</h4>
-            </div>
-          </div>
-          <ul className='Main_menu'>
-            <li><Link to='/Introduce'>클럽소개</Link></li>
-            <li><Link to='/Use'>이용안내</Link></li>
-            <li><Link to='/Course'>코스소개</Link></li>
-            <li><Link to='/Reservation'>예약서비스</Link></li>
-            <li><Link to='/Membership'>부대시설</Link></li>
-            <li><Link to='/Event'>이벤트</Link></li>
-            <li><Link to='/Information'>클럽정보</Link></li>
-          </ul>
-          <ul className='Main_login'>
-            <li><Link to='/Login'>로그인</Link></li>
-            <li><Link to='/Membership'>회원가입</Link></li>
-          </ul>
-        </article>
         <article className='Main_center'>
           <h5>전라남도 최대규모 골프클럽</h5>
           <h2>광주컨트리클럽</h2>
@@ -104,7 +232,7 @@ const Main = () => {
 
             <table className="reservation_right_calendar">
               <thead>
-                <tr>
+                <tr className='reservation_right_calender_top'>
                   <td onClick={prevCalendar} style={{ cursor: 'pointer' }} className="reservation_right_calendar_font">&#60;</td>
                   <td colSpan="5">
                     <span className="reservation_right_calendar_font">{currentDate.getFullYear()}년</span>
@@ -122,7 +250,8 @@ const Main = () => {
                   <td>토</td>
                 </tr>
               </thead>
-              <tbody>
+              <tbody className='reservation_right_calendar_today' >
+                {calendarDays()}
               </tbody>
             </table>
             <div className="reservation_right_calendar_check"><Link to='/Reservation'>예약확인</Link></div>
@@ -130,7 +259,90 @@ const Main = () => {
 
         </div>
       </section>
+      <section className='Main_event'>
+        <div className='Main_event_margin'>
+          <article className='Main_event_left'>
+            <h2>이벤트·행사</h2>
+            <asdie className='Main_event_left_box'>
+              <div>접수하기</div>
+              <div>접수마감</div>
+            </asdie>
+            <asdie className='Main_event_left_slides'>
+              {eventSlidesToDisplay.map((slide, index) => (
+                <Slide key={index} {...slide} />
+              ))}
+            </asdie>
+            <div className='Main_event_left_button'>
+              <button onClick={() => setCurrentIndex((prevIndex) => (prevIndex - 1 + eventSlides.length) % eventSlides.length)}>
+                이전
+              </button>
+              <button onClick={toggleSlidePause}>
+                {isPaused ? '▷' : 'II'}
+              </button>
+              <button onClick={() => setCurrentIndex((prevIndex) => (prevIndex + 1) % eventSlides.length)}>
+                다음
+              </button>
+            </div>
+          </article>
+          <article>
+            <aside className='Main_event_right'>
+              <div className='Main_event_right_img_position'>
+                {eventSlides.map((slide, index) => (
+                  <div key={index} className={`event-image ${index === currentIndex ? 'active' : ''}`}>
+                    <img src={slide.img} />
+                  </div>
+                ))}
+              </div>
+            </aside>
+          </article>
+        </div>
+      </section>
+      <section className='Main_call'>
+        <article>
+          <h2>고객센터</h2>
+          <p>예약관련 문의는 예약사이트를 참고해주시기 바랍니다.</p>
+          <p>문의전화 : 061-399-7100</p>
+          <div><Link to='/Service'>문의글 올리기</Link></div>
+        </article>
+      </section>
+      <section className='Main_gallery'>
+        <article className='Main_gallery_photo'>
+          <h2>클럽 SNS</h2>
 
+          <ul ref={galleryRef}>
+            <button onClick={PhotoPrev}>〈</button>
+            {firstGallery()}
+            <button onClick={PhotoNext}>〉</button>
+          </ul>
+        </article>
+      </section>
+      <section className='Main_map'>
+        <div className='Main_map_margin'>
+        <article className='Main_map_left'>
+          <h2>찾아오시는길</h2>
+          <Map className='Main_map_kakao'
+            center={{ lat: 35.3101401, lng: 127.1699263 }}
+            style={{ width: "640px", height: "445px" }}
+            level={5}
+          >
+            <MapMarker className='Main_map_kakao_point' position={{ lat: 35.3101401, lng: 127.1699263 }}>{'광주컨트리클럽'}<div style={{ color: "#999" }}></div>
+            </MapMarker>
+          </Map>
+        </article>
+        <article className='Main_map_right'>
+          <h2>클럽정보</h2>
+          <div className='Main_map_right_info'>
+            <ul>
+              <li><span className='Main_map_right_info_span1'>공지사항</span><Link to='/Information'>캐디피 인상안내</Link><span className='Main_map_right_info_span2'>관리자&nbsp;&nbsp;&nbsp;&nbsp;2023.05.30</span></li>
+              <li><span className='Main_map_right_info_span1'>공지사항</span><Link to='/Information'>광주컨트리CC 리뉴얼 안내</Link><span className='Main_map_right_info_span2'>관리자&nbsp;&nbsp;&nbsp;&nbsp;2023.05.19</span></li>
+              <li><span className='Main_map_right_info_span1'>공지사항</span><Link to='/Information'>전기차 충전소 설치</Link><span className='Main_map_right_info_span2'>관리자&nbsp;&nbsp;&nbsp;&nbsp;2023.04.18</span></li>
+              <li><span className='Main_map_right_info_span1'>공지사항</span><Link to='/Information'>2023년 단체팀 연부킹 신청안내</Link><span className='Main_map_right_info_span2'>관리자&nbsp;&nbsp;&nbsp;&nbsp;2023.02.15</span></li>
+              <li><Link to='/Information'>자세히 보기 〉</Link></li>
+            </ul>
+          </div>
+        </article>
+        </div>
+      </section>
     </div>
   );
 }

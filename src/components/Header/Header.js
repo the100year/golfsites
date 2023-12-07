@@ -7,7 +7,7 @@ function Header() {
             <section className='header_img'>
                 <article className='header_line'>
                     <div className='header_logo'>
-                        <div className='header_main_logo'></div>
+                    <Link to='./Main'><div className='header_main_logo'></div></Link>
                         <div className='header_main_mutual'>
                             <h2>광주컨트리클럽</h2>
                             <h4>Gwangju Cuntry Club</h4>

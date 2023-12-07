@@ -1,0 +1,26 @@
+.Main_event_left_slide {
+    padding-top: 21px;
+}
+
+.Main_event_left_slide>h4 {
+    color: #FFF;
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.Main_event_left_slide>p:nth-child(2) {
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 400;
+    padding-top: 34px;
+}
+.Main_event_left_slide>p:nth-child(3) {
+    color: #FFF;
+    font-size: 17px;
+    font-weight: 400;
+    padding-top: 11px;
+}
+map{
+    width: 800px;
+    height: 800px;
+}

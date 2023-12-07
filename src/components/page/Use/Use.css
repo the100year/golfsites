@@ -1,0 +1,84 @@
+.Use {
+    width: 100%;
+    background-image: url(./img/메인이거든.png);
+}
+
+.Use_start {
+    width: 1400px;
+    margin: 0 auto;
+    padding-top: 530px;
+}
+
+.Use_start>h2 {
+    color: #FFF;
+    font-size: 47px;
+    font-weight: 700;
+}
+
+
+.Use_start>article {
+    padding-top: 150px;
+}
+
+.Use_start>article>div:nth-child(1) {
+    display: flex;
+    justify-content: space-between;
+    width: 280px;
+    height: 62px;
+}
+
+.Use_num {
+    color: #FFF;
+    font-size: 27px;
+    font-weight: 700;
+    width: 50px;
+    height: 50px;
+    background-color: #558133;
+    text-align: center;
+    line-height: 48px;
+}
+
+.Use_title {
+    color: #FFF;
+    font-size: 47px;
+    font-weight: 700;
+    line-height: 48px;
+    padding-left: 27px;
+}
+
+.Use_one>p {
+    padding-top: 27px;
+    color: #FFF;
+    font-size: 19px;
+    font-weight: 400;
+}
+
+.Use_link {
+    padding-top: 27px;
+    display: flex;
+    justify-content: space-between;
+    width: 314px;
+    height: 46px;
+}
+
+.Use_link>a {
+    width: 147px;
+    height: 46px;
+    color: #fff;
+    background-color: #558133;
+    text-align: center;
+    line-height: 45px;
+}
+
+
+.Use_two>ul {
+    color: #E9E9E9;
+    font-size: 19px;
+    font-weight: 400;
+    padding-top: 25px;
+}
+.Use_two_pot {
+    color: #558133;
+    font-weight: 400;
+    font-size: 19px;
+}

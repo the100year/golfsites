@@ -1,0 +1,81 @@
+.Introduce {
+    background-image: url(./img/메인이거든.png);
+    width: 100%;
+}
+
+.Introduce_main {
+    width: 1400px;
+    margin: 0 auto;
+    padding-top: 530px;
+}
+
+.Introduce_main_club>h2 {
+    color: #FFF;
+    font-size: 47px;
+    font-weight: 700;
+}
+
+.Introduce_main_club>p {
+    padding-top: 4px;
+    float: right;
+    color: #FFF;
+    font-size: 41px;
+    font-weight: 400;
+}
+
+.Introduce_main_intro {
+    padding-top: 100px;
+    color: #FFF;
+}
+.Introduce_main_intro_first{
+    display: flex;
+    justify-content: space-between;
+}
+.Introduce_main_intro_first>p {
+    color: #FFF;
+    font-size: 33px;
+    font-weight: 400;
+}
+.Introduce_main_intro_first>div{
+    background-image: url(./img/1.png);
+    width: 240px;
+    height: 121px;
+}
+
+.Introduce_main_intro_first span {
+    font-weight: 700;
+}
+
+.Introduce_main_intro_second{
+    color: #FFF;
+    font-size: 19px;
+    font-weight: 400;
+    padding-top:24px ;
+    display: flex;
+    justify-content: space-between;
+}
+.Introduce_main_intro_second>div{
+    background-image: url(./img/2.png);
+    width: 240px;
+    height: 121px;
+}
+.Introduce_main_intro_third {
+    color: #FFF;
+    font-size: 19px;
+    font-weight: 400;
+    padding-top: 24px;
+    display: flex;
+    justify-content: space-between;
+}
+.Introduce_main_intro_third>div{
+    background-image: url(./img/3.png);
+    width: 240px;
+    height: 121px;
+}
+.Introduce_main_intro_last {
+    color: #FFF;
+    font-size: 19px;
+    font-weight: 400;
+    padding-top: 59px;
+    padding-bottom: 608px;
+}

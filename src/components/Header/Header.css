@@ -1,10 +1,8 @@
 .header_img {
-    background-image: url(./img/header.png.png);
-    background-size: cover;
-    background-color: rgba(0, 0, 0, 0.5);
-    background-blend-mode: multiply;
-    width: 1900px;
-    height: 1083px;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
 }
 
 .header_line {

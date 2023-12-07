@@ -3,11 +3,10 @@ import { Routes, Route, useNavigate } from 'react-router-dom'
 import Header from'./components/Header/Header';
 import Footer from './components/Footer/Footer';
 import Main from './components/page/Main/Main';
+import Introduce from './components/page/Introduce/Introduce';
+import Use from './components/page/Use/Use';
 // import Login from './components/page/Login/Login';
 // import Membership from './components/page/Membership/Membership';
-
-// import Introduce from './components/page/Introduce/Introduce';
-// import Use from './components/page/Use/Use';
 // import Course from './components/page/Course/Course';
 // import Reservation from './components/page/Reservation/Reservation';
 // import Facility from './components/page/Facility/Facility';
@@ -41,12 +40,13 @@ function App() {
   }
   return (
     <div className="App">
+      <Header HeaderPixd={isHeaderPix}/>
         <Routes>
           <Route path='/*' element={<Main />}/>
-          {/* <Route path='/Login/*' element={<Login FooterPixd={FooterPix} Headerpixd={HeaderPix} />}/>
-          <Route path='/Membership/*' element={<Membership FooterPixd={FooterPix} Headerpixd={HeaderPix}/>}/>
           <Route path='/Introduce/*' element={<Introduce  FooterPixd={FooterPix} Headerpixd={HeaderPix}/>}/>
           <Route path='/Use/*' element={<Use FooterPixd={FooterPix} Headerpixd={HeaderPix}/>}/>
+          {/* <Route path='/Login/*' element={<Login FooterPixd={FooterPix} Headerpixd={HeaderPix} />}/>
+          <Route path='/Membership/*' element={<Membership FooterPixd={FooterPix} Headerpixd={HeaderPix}/>}/>
           <Route path='/Course/*' element={<Course FooterPixd={FooterPix} Headerpixd={HeaderPix}/>}/>
           <Route path='/Reservation/*' element={<Reservation FooterPixd={FooterPix} Headerpixd={HeaderPix}/>}/>
           <Route path='/Facility/*' element={<Facility FooterPixd={FooterPix} Headerpixd={HeaderPix}/>}/>

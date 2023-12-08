@@ -1,0 +1,95 @@
+.Course {
+    width: 100%;
+    background-image: url(./img/메인이거든.png);
+}
+
+.Course_start {
+    width: 875px;
+    margin: 0 auto;
+    padding-top: 530px;
+}
+
+.Course_start>h2 {
+    color: #FFF;
+    font-size: 47px;
+    font-weight: 700;
+}
+
+.Course_img {
+    background-image: url(./img/courseimg.png);
+    width: 686px;
+    height: 459px;
+    margin: 0 auto;
+}
+
+.Course_start>article {
+    padding-top: 270px;
+}
+
+.Course_start>article>aside {
+    display: flex;
+}
+.Course_start>article>aside>table{
+    width: 812px;
+    height: 300px;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+.Course_start>article>aside>table>tr{
+    color: #FFF;
+    font-size: 25px;
+    font-weight: 400;
+}
+.Course_start>article>aside>table>tr:nth-child(1){
+    background-color:  #929292;
+    color: #FFF;
+    font-size: 31px;
+    font-weight: 700;
+}
+.Course_start>article>aside>table>tr>td{
+    border: 1px solid #D9D9D9;
+    text-align: center;
+}
+
+.Course_start>article>aside>table>tr>td:nth-child(1){
+    width:122px ;
+}
+.Course_start>article>aside>table>tr>td:nth-child(11){
+    width:122px ;
+}
+.Course_start>article>aside>table>tr>td{
+    width:calc((100% - 244) / 9) ;
+}
+
+.Course_start>article>aside>h2 {
+    color: #FFF;
+    font-size: 47px;
+    font-weight: 700;
+    padding-bottom: 75px;
+    padding-left: 15px;
+    line-height: 35px;
+}
+
+.Course_dongak>aside>div {
+    width: 35px;
+    height: 35px;
+    background-color: #A9986A;
+    border-radius: 50%;
+}
+
+.Course_sumjin>aside>div {
+    width: 35px;
+    height: 35px;
+    background-color: #433832;
+    border-radius: 50%;
+}
+
+.Course_sulsan>aside>div {
+    width: 35px;
+    height: 35px;
+    background-color: #FAFAFA;
+    border-radius: 50%;
+}
+.Course_sulsan{
+    padding-bottom: 500px;
+}

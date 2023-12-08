@@ -18,7 +18,7 @@ function Header() {
                         <li><Link to='/use'>이용안내</Link></li>
                         <li><Link to='/course'>코스소개</Link></li>
                         <li><Link to='/reservation'>예약서비스</Link></li>
-                        <li><Link to='/membership'>부대시설</Link></li>
+                        <li><Link to='/facility'>부대시설</Link></li>
                         <li><Link to='/event'>이벤트</Link></li>
                         <li><Link to='/information'>클럽정보</Link></li>
                     </ul>

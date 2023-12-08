@@ -1,0 +1,14 @@
+.Facility{
+    width: 100%;
+    background-image: url(./img/메인이거든.png);
+}
+.Facility_start{
+    width: 875px;
+    margin: 0 auto;
+    padding-top: 530px;
+}
+.Facility_p>h2{
+    color: #FFF;
+    font-size: 47px;
+    font-weight: 700;
+}

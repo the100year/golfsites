@@ -79,7 +79,7 @@ const Main = () => {
       img: require('./img/qdeal.png')
     },
   ];
-  console.log(eventSlides)
+ 
   const eventSlidesToDisplay = eventSlides.slice(currentIndex, currentIndex + 1);
   useEffect(() => {
     const interval = setInterval(() => {

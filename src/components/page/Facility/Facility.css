@@ -1,14 +1,85 @@
-.Facility{
+.Facility {
     width: 100%;
     background-image: url(./img/메인이거든.png);
 }
-.Facility_start{
+
+.Facility_start {
     width: 875px;
     margin: 0 auto;
     padding-top: 530px;
 }
-.Facility_p>h2{
+
+.Facility_p>h2 {
     color: #FFF;
     font-size: 47px;
     font-weight: 700;
+}
+
+.Facility_p>div {
+    padding-top: 150px;
+}
+
+.Facility_p>div>p:nth-child(1) {
+    color: #FFF;
+    font-size: 21px;
+    font-weight: 700;
+}
+
+.Facility_p>div>p:nth-child(2) {
+    color: #FFF;
+    font-weight: 400;
+    padding-top: 80px;
+    line-height: 300%;
+}
+
+.Facility_p>div>p:nth-child(3) {
+    color: #FFF;
+    font-weight: 400;
+    padding-top: 50px;
+    line-height: 300%;
+}
+
+.Facility_p>div>p:nth-child(3)>span {
+    color: #558133;
+}
+.Facility_margin{
+   display: flex;
+   justify-content: center;
+}
+.Facility_tap {
+    display: flex;
+    align-items: center;
+    padding-top: 118px;
+}
+
+.Facility_tap>li {
+    background: rgba(146, 146, 146, 0.37);
+}
+
+.Facility_tap>li>button {
+    color: #E9E9E9;
+    width: 136px;
+    height: 46px;
+    font-size: 21px;
+    font-weight: 400;
+    border: none;
+    line-height: 40px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid #D9D9D9;
+}
+.Facility_tap>li>button.active{
+    border: 6px solid rgba(255, 255, 255, 0.37);
+}
+.Facility_img{
+    padding-top:77px ;
+    padding-bottom: 500px;
+}
+.Facility_img>p{
+    padding-bottom: 20px;
+    color: rgba(146, 146, 146, 0.42);;
+}
+.Facility_images {
+    width: 898px;
+    height: 582px;
+    background-size: cover;
 }

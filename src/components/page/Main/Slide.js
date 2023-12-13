@@ -1,6 +1,6 @@
 import React from 'react';
 import './slide.css'
-const Slide = ({ title, period, location, img }) => (
+const Slide = ({ title, period, location}) => (
   <div className="Main_event_left_slide">
     <h4>{title}</h4>
     <p>기간: {period}</p>

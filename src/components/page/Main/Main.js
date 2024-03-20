@@ -175,7 +175,7 @@ const Main = () => {
       <section className='Main_img'>
         <article className='Main_center'>
           <h5>전라남도 최대규모 골프클럽</h5>
-          <h2>광주컨트리클럽11</h2>
+          <h2>광주컨트리클럽</h2>
           <div className='Main_view'></div>
         </article>
         <article className='Main_info'>

@@ -1,3 +1,4 @@
+/*global kakao*/
 import './Main.css';
 import { Link } from 'react-router-dom'
 import React, { useState, useEffect, useRef } from 'react';

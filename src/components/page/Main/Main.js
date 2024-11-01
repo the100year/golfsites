@@ -173,6 +173,7 @@ const Main = () => {
   return (
     <div className="Main">
       <section className='Main_img'>
+      <div className='w1400'>
         <article className='Main_center'>
           <h5>전라남도 최대규모 골프클럽</h5>
           <h2>광주컨트리클럽</h2>
@@ -209,6 +210,7 @@ const Main = () => {
             <div><Link to='/Road'>오시는길</Link></div>
           </asdie>
         </article>
+      </div>
       </section>
       <section className='Main_reservation'>
         <div className='Main_reservation_flex'>
@@ -344,6 +346,7 @@ const Main = () => {
         </article>
         </div>
       </section>
+      
     </div>
   );
 }

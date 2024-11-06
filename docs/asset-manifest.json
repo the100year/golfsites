@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/golfsites/static/css/main.478036ea.css",
-    "main.js": "/golfsites/static/js/main.748a620a.js",
+    "main.css": "/golfsites/static/css/main.3c61fb78.css",
+    "main.js": "/golfsites/static/js/main.fe41a084.js",
     "static/media/main_img.png": "/golfsites/static/media/main_img.9e9404c35db487dd9105.png",
     "static/media/메인이거든.png": "/golfsites/static/media/메인이거든.f55c9c63dfc9b873b57b.png",
     "static/media/mapback.png": "/golfsites/static/media/mapback.2436701ae0f5572419a4.png",
@@ -11,6 +11,7 @@
     "static/media/courseimg.png": "/golfsites/static/media/courseimg.3aad7f00abc8639b01b7.png",
     "static/media/hanagolf.png": "/golfsites/static/media/hanagolf.76748c05dd211536a669.png",
     "static/media/clubhouse4.jpg": "/golfsites/static/media/clubhouse4.9573d9df4ff6bc9a6c3e.jpg",
+    "static/media/bg1.png": "/golfsites/static/media/bg1.11a9224ebd1deabfd9c5.png",
     "static/media/pro0.jpg": "/golfsites/static/media/pro0.b2cf7b0e8d40e080ef71.jpg",
     "static/media/pro2.jpg": "/golfsites/static/media/pro2.129b50ec96665fc1e9ff.jpg",
     "static/media/restaurant0.jpg": "/golfsites/static/media/restaurant0.cc57cd915ffb840674cb.jpg",
@@ -53,6 +54,7 @@
     "static/media/photo16.png": "/golfsites/static/media/photo16.471151d509a1d8b63dc1.png",
     "static/media/locker4.jpg": "/golfsites/static/media/locker4.2b91f98b2f7f09249f0c.jpg",
     "static/media/locker3.jpg": "/golfsites/static/media/locker3.cc92863cf33497336be7.jpg",
+    "static/media/bg2.png": "/golfsites/static/media/bg2.40728179b5746c9f0d70.png",
     "static/media/photo17.png": "/golfsites/static/media/photo17.492a2721701d52cae082.png",
     "static/media/photo9.png": "/golfsites/static/media/photo9.492a2721701d52cae082.png",
     "static/media/locker7.jpg": "/golfsites/static/media/locker7.39729038e905a55a089b.jpg",
@@ -61,11 +63,11 @@
     "static/media/2.png": "/golfsites/static/media/2.a85e1bcf2fb81741dfcf.png",
     "static/media/logo.png": "/golfsites/static/media/logo.79ee77eaa870e93b89ea.png",
     "index.html": "/golfsites/index.html",
-    "main.478036ea.css.map": "/golfsites/static/css/main.478036ea.css.map",
-    "main.748a620a.js.map": "/golfsites/static/js/main.748a620a.js.map"
+    "main.3c61fb78.css.map": "/golfsites/static/css/main.3c61fb78.css.map",
+    "main.fe41a084.js.map": "/golfsites/static/js/main.fe41a084.js.map"
   },
   "entrypoints": [
-    "static/css/main.478036ea.css",
-    "static/js/main.748a620a.js"
+    "static/css/main.3c61fb78.css",
+    "static/js/main.fe41a084.js"
   ]
 }

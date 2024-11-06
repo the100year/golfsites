@@ -9,7 +9,7 @@
     background-color: rgba(0, 0, 0, 0.5);
     background-blend-mode: multiply;
     width: 100%;
-    height: 1080px;
+    height: 80vh;
     padding-top: 116px;
 }
 
@@ -25,7 +25,7 @@
     background-size: cover;
     padding-top: 29px;
     width: 100%;
-    height: 558px;
+    height: 30vw;
 }
 
 .Main_center>h5 {
@@ -52,45 +52,50 @@
 .Main_info_left {
     display: flex;
     justify-content: space-between;
-    width: 763px;
+    width: 70%;
 }
 
 .Main_info_time>p {
     color: #D9D9D9;
-    font-size: 17px;
+    font-size: 1.3vw;
     font-weight: 400;
     padding-top: 15px;
 }
 
 .Main_info_time_flex {
     display: flex;
-    justify-content: space-between;
-    width: 120px;
+    justify-content:flex-start;
+    width: 100%;
+    align-items: center;
 }
 
 .Main_info_time_img {
     background-image: url(./img/time.png);
     width: 27px;
     height: 27px;
+    vertical-align: middle;
 }
 
 .Main_info_time_flex>p {
     color: #D9D9D9;
-    font-size: 21px;
+    font-size:  1.7vw;;
     font-weight: 700;
+    vertical-align: middle;
+    padding-left: 1vw;
 }
 
 .Main_info_money>p {
     color: #D9D9D9;
-    font-size: 17px;
+    font-size:  1.3vw;
     font-weight: 400;
     padding-top: 15px;
 }
 
 .Main_info_money_flex {
     display: flex;
-    justify-content: space-between;
-    width: 90px;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
 }
 
 .Main_info_money_img {
@@ -98,48 +103,54 @@
     background-size: cover;
     width: 27px;
     height: 27px;
+    vertical-align: middle;
 }
 
 .Main_info_money_flex>p {
     color: #D9D9D9;
-    font-size: 21px;
+    font-size:  1.7vw;
     font-weight: 700;
+    vertical-align: middle;
+    padding-left: 1vw;
 }
 
 
 .Main_info_close>p {
     color: #D9D9D9;
-    font-size: 17px;
+    font-size:  1.3vw;
     font-weight: 400;
     padding-top: 15px;
 }
 
 .Main_info_close_impact {
     color: #929292;
-    font-size: 14px;
+    font-size:  1.1vw;
     font-weight: 400;
 }
 
 .Main_info_close_flex {
     display: flex;
-    justify-content: space-between;
-    width: 100px;
+    justify-content: flex-start;
+    width: 100%;
+    align-items: center;
 }
 
 .Main_info_close_img {
     background-image: url(./img/time.png);
     width: 27px;
     height: 27px;
+    vertical-align: middle;
 }
 
 .Main_info_close_flex>p {
     color: #D9D9D9;
-    font-size: 21px;
+    font-size:  1.7vw;
     font-weight: 700;
+    vertical-align: middle;
 }
 
 .Main_info_right {
-    width: 258px;
+    width: 20%;
     display: flex;
     justify-content: space-between;
 }
@@ -147,45 +158,54 @@
 .Main_info_right>div:nth-child(1)>a {
     border-radius: 10px;
     background: #000;
-    width: 123px;
-    height: 87px;
-    display: block;
+    width: 8vw;
+    height: 5vw;
     color: #FFF;
-    font-size: 18px;
+    font-size: 1.2vw;
     font-weight: 400;
     text-align: center;
-    line-height: 80px;
-
+    display: flex;          
+    align-items: center;    
+    justify-content: center;
 }
 
 .Main_info_right>div:nth-child(2)>a {
     border-radius: 10px;
     background: #fff;
-    width: 123px;
-    height: 87px;
-    display: block;
+    width: 8vw;
+    height: 5vw;
     color: #000;
-    font-size: 18px;
+    font-size: 1.2vw;
     font-weight: 400;
     text-align: center;
-    line-height: 80px;
+    display: flex;          
+    align-items: center;     
+    justify-content: center;
 }
 
 .Main_reservation {
     width: 100%;
     margin: 0 auto;
-    padding-top: 279px;
+    padding-top: 18vw;
     background-color: #000;
+    padding-bottom: 3vw;
 }
 
 .Main_reservation_flex {
     display: flex;
     justify-content: space-between;
-    width: 1440px;
+    width: 80%;
     margin: 0 auto;
 }
-
-.Main_reservation_left>h2 {
+.Main_reservation_left{
+    width: 45%;
+}
+.Main_h2{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 3vw ;
+}
+.Main_h2>h2 {
     color: #E9E9E9;
     font-size: 42px;
     font-weight: 700;
@@ -193,14 +213,14 @@
 
 .Main_reservation_left_info {
     display: flex;
-    justify-content: space-between;
-    width: 456px;
+    justify-content:flex-start;
+    width: 100%;
     padding-top: 60px;
 }
 
 .Main_reservation_left_info>p:nth-child(1) {
     color: #FFF;
-    font-size: 12px;
+    font-size: 0.9vw;
     font-weight: 400;
     width: 73px;
     height: 31px;
@@ -212,20 +232,21 @@
 
 .Main_reservation_left_info>p:nth-child(2) {
     color: #E9E9E9;
-    font-size: 24px;
+    font-size: 1.5vw;
     font-weight: 700;
+    padding-left: 1vw;
 }
 
 .Main_reservation_left_method {
-    width: 385px;
+    width: 100%;
     display: flex;
-    justify-content: space-between;
+    justify-content:flex-start;
     padding-top: 10px;
 }
 
 .Main_reservation_left_method>p:nth-child(1) {
     color: #D9D9D9;
-    font-size: 12px;
+    font-size: 0.9vw;
     font-weight: 400;
     text-align: center;
     line-height: 30px;
@@ -238,13 +259,14 @@
 
 .Main_reservation_left_method>p:nth-child(2) {
     color: #E9E9E9;
-    font-size: 17px;
+    font-size: 1.5vw;
     font-weight: 700;
+    padding-left: 1vw;
 }
 
 .Main_reservation_left_method>p:nth-child(2)>span {
     color: #929292;
-    font-size: 17px;
+    font-size: 1.1vw;
     font-weight: 400;
 }
 
@@ -254,17 +276,20 @@
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0px 40px 30px -20px rgba(0, 0, 0, 0.3);
+    width: 35%;
 }
 
 .reservation_right_calendar {
     text-align: center;
-    width: 491px;
-    height: 400px
+    width: 100%;
 }
-
+.reservation_right_calendar>thead{
+    width: 100%;
+    height: 10vw;
+}
 .reservation_right_calendar_font {
     color: #fff;
-    font-size: 15px;
+    font-size: 1.1rem;
 }
 
 .reservation_right_calender_top {
@@ -273,11 +298,12 @@
 
 .reservation_right_calendar_day {
     color: #fff;
-    font-size: 20px;
+    font-size: 1.1rem;
 }
 
 .reservation_right_calendar_day>td {
-    padding: 20px 0;
+    padding: 10px 0;
+
 }
 
 .reservation_right_calendar_day>td:nth-child(1) {
@@ -303,13 +329,20 @@
 }
 
 .reservation_right_calendar_today {
-    font-size: 20px;
+    font-size: 1.1rem;
     color: #fff;
+    
+}
+.reservation_right_calendar_today > tr > td {
+    padding: 0; 
+    width: 3rem;
+    height: 3rem;
+    text-align: center;
+    vertical-align: middle;
 }
 
-
 .reservation_right_calendar_check>a {
-    margin: 30px auto;
+    margin: 0 auto;
     color: #fff;
     background-color: #929292;
     border-radius: 10px;
@@ -318,7 +351,7 @@
     text-align: center;
     padding-top: 5px;
     display: block;
-    font-size: 20px;
+    font-size: 1.3vw;
     line-height: 25px;
 }
 
@@ -328,7 +361,7 @@
     background-color: #000;
     /* 지난 날짜의 배경색을 회색으로 변경 */
     position: relative;
-    border-radius: 50%;
+    border-radius: 20%;
     width: 62px;
     height: 62px;
 }
@@ -337,7 +370,7 @@
     background-color: #C9A454;
     /* 오늘 날짜의 배경색을 변경하세요 */
     position: relative;
-    border-radius: 50%;
+    border-radius: 20%;
     width: 62px;
     height: 62px;
 }
@@ -347,12 +380,12 @@
     width: 100%;
     margin: 0 auto;
     background-color: #000;
-    padding-top: 279px;
+    padding-top: 18vw;
 }
 
 
 .Main_event_margin {
-    width: 1440px;
+    width: 80%;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
@@ -361,8 +394,12 @@
 .Main_event_margin>article {
     width: 50%;
 }
-
-.Main_event_left>h2 {
+.event_h2{
+    width: 80%;
+    margin: 0 auto;
+    padding-bottom: 3vw;
+}
+.event_h2>h2 {
     color: #E9E9E9;
     font-size: 38px;
     font-weight: 700;
@@ -384,12 +421,11 @@
     display: flex;
     width: 188px;
     justify-content: space-between;
-    padding-top: 44px;
 }
 
 .Main_event_left_box>div:nth-child(1) {
     color: #000;
-    font-size: 14px;
+    font-size: 1vw;
     font-weight: 700;
     width: 90px;
     height: 33px;
@@ -402,7 +438,7 @@
 
 .Main_event_left_box>div:nth-child(2) {
     color: #FFF;
-    font-size: 14px;
+    font-size: 1vw;
     font-weight: 700;
     width: 90px;
     height: 33px;
@@ -412,32 +448,39 @@
     text-align: center;
     line-height: 30px;
 }
-
+.Main_event_right{
+    width: 100%;
+}
 
 .Main_event_right_img_position {
     position: relative;
     width: 100%;
     height: 100%;
 }
-
 .event-image {
     position: absolute;
     top: 0px;
-    left: -25px;
+    left: 0px;
     width: 100%;
     height: 100%;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
     border-radius: 50px;
+    object-fit: cover;
 }
-
+.wi_sm{
+    width: 100%;
+    height: 400px;
+}
 .event-image.active {
     opacity: 1;
 
 }
 
 .Main_event_left_button {
-    padding-top: 110px;
+    position: relative;
+    padding-top: 115px;
+    left: 0;
     width: 60%;
     display: flex;
     justify-content: space-between;
@@ -458,7 +501,7 @@
 }
 
 .Main_call>article {
-    width: 1440px;
+    width: 80%;
     margin: 0 auto;
     padding-top: 104px;
 }
@@ -490,12 +533,12 @@
 
 .Main_call>article>div>a {
     color: #6C6F6B;
-    font-size: 14px;
+    font-size: 0.9vw;
     font-weight: 400;
     display: block;
     border-radius: 9px;
     background: #E9E9E9;
-    width: 133px;
+    width: 10vw;
     height: 38px;
     text-align: center;
     line-height: 38px;
@@ -511,21 +554,37 @@
     color: #E9E9E9;
     font-size: 38px;
     font-weight: 700;
+    padding-bottom: 3vw;
 }
 
 .Main_gallery_photo {
-    width: 1440px;
+    width: 80%;
     margin: 0 auto;
     padding-top: 104px;
 }
 
+
 .Main_gallery_photo>ul {
+    display: flex;
+    flex-direction: column; /* 세로로 배치 */
+    align-items: center;
+    gap: 20px;
     padding-top: 86px;
+}
+
+.gallery-row {
+    display: flex;
+    justify-content: space-around;
+    gap: 15px;
+}
+.gal_flex{
     display: flex;
     justify-content: space-between;
 }
-
-.Main_gallery_photo>ul>button {
+.gallery-row li {
+    list-style: none;
+}
+.gal_flex>button {
     background-color: rgba(0, 0, 0, 0);
     border: none;
     color: #888;
@@ -537,70 +596,81 @@
 .Main_map {
     width: 100%;
     background-image: url(./img/mapback.png);
+    background-size: cover;
     padding-bottom: 137px;
 
 }
 
-.Main_map_kakao {
-    margin-top: 115px;
-    border-radius: 20px;
-}
 
 .Main_map_margin {
     display: flex;
     justify-content: space-between;
-    width: 1400px;
+    width: 80%;
     margin: 0 auto;
     padding-top: 104px;
+}
+
+.Main_map_left{
+    width: 45%;
+    height: 445px;
+}
+.Main_map_kakao {
+    border-radius: 20px;
+    width: 80%;
 }
 
 .Main_map_left>h2 {
     color: #E9E9E9;
     font-size: 38px;
     font-weight: 700;
+    padding-bottom: 3vw;
 }
-
+.Main_map_right{
+    width: 45%;
+}
 .Main_map_right>h2 {
     color: #E9E9E9;
     font-size: 38px;
     font-weight: 700;
+    padding-bottom: 3vw;
 }
 
 .Main_map_right_info {
-    width: 620px;
+    width: 100%;
     height: 445px;
     border-top: 1px solid #E9E9E9;
     border-bottom: 1px solid #E9E9E9;
-    margin-top: 115px;
 }
-
+.Main_map_right_info>ul{
+    width: 100%;
+}
+.Main_map_right_info>ul>li{
+    width: 100%;
+}
 .Main_map_right_info>ul>li {
     height: 109px;
-    line-height: 109px;
+    display: flex;           /* 플렉스 레이아웃 사용 */
+    align-items: center;  
 }
 
+
 .Main_map_right_info>ul>li>a {
-    font-size: 18px;
+    font-size: 1vw;
     font-weight: 700;
-    width: 485px;
     padding-left: 23px;
     color: #fff;
 }
 
-.Main_map_right_info>ul>li:nth-child(1) {
+.Main_map_right_info>ul>li:nth-child(1),
+.Main_map_right_info>ul>li:nth-child(2),
+.Main_map_right_info>ul>li:nth-child(3){
     border-bottom: 1px dashed #929292;
 }
 
-.Main_map_right_info>ul>li:nth-child(2) {
-    border-bottom: 1px dashed #929292;
-}
 
-.Main_map_right_info>ul>li:nth-child(3) {
-    border-bottom: 1px dashed #929292;
-}
 
-.Main_map_right_info>ul>li:nth-child(5) {
-    float: right;
+.Main_map_right_info>ul>li:nth-child(5)>a {
+    margin-left: auto;
 }
 
 .Main_map_right_info_span1 {
@@ -609,14 +679,14 @@
     border-radius: 7px;
     background: #000;
     color: #FFF;
-    font-size: 14px;
+    font-size: 1vw;
     font-weight: 700;
 }
 
 .Main_map_right_info_span2 {
-    float: right;
+   margin-left: auto;
     color: #929292;
-    font-size: 14px;
+    font-size: 1vw;
     font-weight: 700;
 }
 
@@ -627,22 +697,36 @@
 
     .Main_view {
         background-image: url(./img/bg1.png);
+        background-size: cover;
     }
 
     .Main_reservation_flex {
         width: 80%;
     }
 
-    .reservation_right_calendar {
-        width: 459px;
-        height: 424px
-    }
+
     .Main_event_margin{
         width: 80%;
     }
-    .Main_event_left_slides{
-        width: 500px;
+   
+
+    .Main_event_right{
+        width: 100%;
     }
+    .Main_call>article{
+        width: 80%;
+    }
+    .Main_gallery_photo{
+        width: 80%;
+    }
+    .Main_gallery_photo>ul {
+        width: 90%;
+        padding-top: 50px;
+      }
+      .back_color{
+        width: 40%;
+      }
+
 }
 
 
@@ -652,6 +736,291 @@
 
 @media (max-width : 1024px) {
     .Main_view {
+        margin-top: 15vw;
         background-image: url(./img/bg2.png);
+        background-size: cover;
+        background-repeat: no-repeat;
     }
+    .back_color{
+        width: 50%;
+      }
+      .wi_sm{
+        height: 300px;
+      }
+      .Main_info {
+        padding-top: 15vw;
+    }
+    .Main_map_right_info>ul{
+        width: 100%;
+    }
+      .Main_map_right_info>ul>li{
+        width: 100%;
+      }
 }
+
+
+
+
+
+
+@media (max-width : 768px) {
+    .Main_info{
+        flex-direction: column;
+    }
+    .Main_info_left{
+        width: 100%;
+    }
+    .Main_info_right>div:nth-child(1)>a,
+    .Main_info_right>div:nth-child(2)>a{
+        font-size: 1.7vw;
+    }
+    .Main_info_time_flex,
+    .Main_info_money_flex,
+    .Main_info_close_flex
+    {
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .Main_info_time>p,
+    .Main_info_money>p,
+    .Main_info_close>p
+    {
+      font-size: 1.5vw;
+    }
+    .Main_info_time_flex>p,
+    .Main_info_money_flex>p,
+    .Main_info_close_flex>p{
+        padding-left: 0.5vw;
+        font-size: 1.7vw;
+    }
+    .Main_info_right{
+        width: 100%;
+        padding-top: 3vw;
+    }
+    .Main_info_right>div{
+        width: 45%;
+    }
+    .Main_info_right>div:nth-child(1)>a,
+    .Main_info_right>div:nth-child(2)>a {
+        width: 100%;
+        color: #fff;
+        background-color: #000;
+        border: 1px solid #fff;
+    }
+    .Main_reservation_flex{
+        flex-direction: column-reverse;
+    }
+    .Main_reservation_left{
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 5vw;
+    }
+    .Main_reservation_left_info>p:nth-child(1),
+    .Main_reservation_left_method>p:nth-child(1) {
+        font-size: 1.5vw;
+    }
+    
+    .Main_reservation_left_info>p:nth-child(2),
+    .Main_reservation_left_method>p:nth-child(2) {
+        font-size: 1.7vw;
+    }
+    .Main_reservation_left_info,
+    .Main_reservation_left_method{
+        padding: 0;
+    }
+    .Main_reservation_left_method{
+        justify-content: flex-end;
+    }
+    .back_color{
+        width: 80%;
+        margin: 0 auto;
+    }
+    .Main_event_margin{
+        flex-direction: column-reverse;
+    }
+    .Main_event_margin>article{
+        width: 100%;
+    }
+    .Main_event_right{
+        width: 90%;
+        height: 350px;
+        margin: 0 auto;
+    }
+    .Main_event_left{
+        width: 100%;
+        margin: 0 auto;
+    }
+    .Main_event_left_box{
+        width: 100%;
+    }
+    .Main_event_left_box>div:nth-child(1),
+    .Main_event_left_box>div:nth-child(2){
+        width: 45%;
+        font-size: 1.5vw;
+    }
+    .Main_event_left_button{
+        padding-top: 10vw;
+    }
+   
+    .Main_map_margin{
+        flex-direction: column;
+        padding-bottom: 8vw;
+    }
+    .Main_map_margin>article{
+        width: 100%;
+    }
+    .Main_map_left{
+        width: 90%;
+        height: 350px;
+    }
+    .Main_map_kakao{
+        margin: 0 auto;
+    }
+    .Main_map_right{
+        padding-top: 30vw;
+        width: 80%;
+    }
+    .Main_map_right_info{
+        height: 40vw;
+    }
+    .Main_map_right_info>ul>li {
+        height: 10vw;
+    }
+
+    .Main_map_right_info>ul>li>a ,
+    .Main_map_right_info_span1,
+    .Main_map_right_info_span2{
+        font-size: 1.5vw;
+    }
+    .Main_call>article>div>a{
+        font-size: 1.3vw;
+    }
+
+}
+
+
+@media (max-width : 580px){
+    .Main_center>h2{
+        font-size: 10vw;
+    }
+    .back_color{
+        height: 300px;
+    }
+    .reservation_right_calendar{
+        height:100px;
+    }
+    .reservation_right_calendar_day{
+        font-size: 3vw;
+    }
+    .reservation_right_calendar td{
+        padding :0;
+    }
+    .reservation_right_calendar_today{
+        font-size: 3vw;
+    }
+    .reservation_right_calendar_today>tr>td{
+        width: 2vw;
+        height: 2vw;
+        padding: 4px;
+        text-align: center;
+    }
+    .Main_info_right>div:nth-child(1)>a,
+    .Main_info_right>div:nth-child(2)>a{
+        font-size: 2vw;
+    }
+    .Main_info_time>p,
+    .Main_info_money>p,
+    .Main_info_close>p
+    {
+      font-size: 2vw;
+    }
+    .Main_info_time_flex>p,
+    .Main_info_money_flex>p,
+    .Main_info_close_flex>p{
+        font-size: 2.2vw;
+    }
+    .Main_info_close_impact{
+        font-size: 1.7vw;
+    }
+    .Main_h2>h2{
+        font-size: 5vw;
+    }
+    .Main_reservation_left{
+        flex-direction: column;
+        width: 80%;
+        margin: 0 auto;
+    }
+    .Main_reservation_left_info,
+    .Main_reservation_left_method{
+        width: 100%;
+        justify-content: flex-start;
+    }
+    .Main_reservation_left_method{
+        padding-top: 1vw;
+    }
+    .Main_reservation_left_info>p:nth-child(1),
+    .Main_reservation_left_method>p:nth-child(1) {
+        font-size: 1.7vw;
+        display: flex;          
+        align-items: center;   
+        justify-content: center;
+    }
+    
+    .Main_reservation_left_info>p:nth-child(2),
+    .Main_reservation_left_method>p:nth-child(2) {
+        font-size: 1.5vw;
+        display: flex;          
+        align-items: center;   
+        justify-content: center;
+    }
+    .Main_reservation_left_info>p:nth-child(2)>br{
+        display: inline-block;
+        content: " ";
+        padding: 0 2px;
+     }
+     .reservation_right_calendar_check>a{
+        font-size: 1.7vw;
+     }
+     .event_h2>h2{
+        font-size: 5vw;
+     }
+     .Main_event_left_box>div:nth-child(1),
+     .Main_event_left_box>div:nth-child(2){
+        font-size: 2vw;
+     }
+     .Main_event_left_button{
+        width: 100%;
+     }
+     .Main_call>article>h2{
+        font-size: 5vw;
+     }
+     .Main_call>article>p:nth-child(2),
+     .Main_call>article>p:nth-child(3){
+        font-size: 4vw;
+     }
+     .Main_call>article>div>a{
+        width: 15vw;
+        font-size: 1.7vw;
+     }
+     .Main_gallery_photo>h2{
+        font-size: 5vw;
+     }
+     .Main_map_left>h2{
+        font-size: 5vw;
+     }
+     .Main_map_right>h2{
+        font-size: 5vw;
+     }
+     .Main_map_right>h2{
+        font-size: 5vw;
+     }
+     .Main_map_right_info>ul>li>a ,
+     .Main_map_right_info_span1,
+     .Main_map_right_info_span2{
+         font-size: 1.7vw;
+     }
+
+}
+
+

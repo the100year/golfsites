@@ -4,23 +4,32 @@
 
 .Main_event_left_slide>h4 {
     color: #FFF;
-    font-size: 26px;
+    font-size: 1.7vw;
     font-weight: 700;
 }
 
 .Main_event_left_slide>p:nth-child(2) {
     color: #FFF;
-    font-size: 17px;
+    font-size: 1.5vw;
     font-weight: 400;
     padding-top: 34px;
 }
 .Main_event_left_slide>p:nth-child(3) {
     color: #FFF;
-    font-size: 17px;
+    font-size: 1.5vw;
     font-weight: 400;
     padding-top: 11px;
 }
 map{
     width: 800px;
     height: 800px;
+}
+@media (max-width : 768px) {
+    .Main_event_left_slide>h4{
+        font-size: 3vw;
+    }
+    .Main_event_left_slide>p:nth-child(2),
+    .Main_event_left_slide>p:nth-child(3){
+        font-size: 2vw;
+    }
 }

@@ -150,17 +150,17 @@ const Main = () => {
     const updateItemsPerRow = () => {
       if (window.innerWidth <= 500) {
         setItemsPerRow(1); // 500px 미만에서 가로로 1개씩
-      } else if (window.innerWidth <= 1023) {
-        setItemsPerRow(2); // 1023px 이하에서 가로로 2개씩
-      } else if (window.innerWidth <= 1440) {
+      } else if (window.innerWidth > 500 && window.innerWidth <= 1024) {
+        setItemsPerRow(2); // 1024px 이하에서 가로로 2개씩
+      } else if (window.innerWidth > 1023 && window.innerWidth <= 1440) {
         setItemsPerRow(3); // 1440px 이하에서 가로로 3개씩
       } else {
         setItemsPerRow(5); // 기본값
       }
     };
 
-    window.addEventListener("resize", updateItemsPerRow);
     updateItemsPerRow();
+    window.addEventListener("resize", updateItemsPerRow);
 
     return () => window.removeEventListener("resize", updateItemsPerRow);
   }, []);

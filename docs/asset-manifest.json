@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/golfsites/static/css/main.3c61fb78.css",
+    "main.css": "/golfsites/static/css/main.eef0c61a.css",
     "main.js": "/golfsites/static/js/main.fe41a084.js",
     "static/media/main_img.png": "/golfsites/static/media/main_img.9e9404c35db487dd9105.png",
     "static/media/메인이거든.png": "/golfsites/static/media/메인이거든.f55c9c63dfc9b873b57b.png",
@@ -63,11 +63,11 @@
     "static/media/2.png": "/golfsites/static/media/2.a85e1bcf2fb81741dfcf.png",
     "static/media/logo.png": "/golfsites/static/media/logo.79ee77eaa870e93b89ea.png",
     "index.html": "/golfsites/index.html",
-    "main.3c61fb78.css.map": "/golfsites/static/css/main.3c61fb78.css.map",
+    "main.eef0c61a.css.map": "/golfsites/static/css/main.eef0c61a.css.map",
     "main.fe41a084.js.map": "/golfsites/static/js/main.fe41a084.js.map"
   },
   "entrypoints": [
-    "static/css/main.3c61fb78.css",
+    "static/css/main.eef0c61a.css",
     "static/js/main.fe41a084.js"
   ]
 }
